@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!--time tracking dashboard-->
+  <main class="dashboard">
+
+    <!--profile card-->
+    <section class="profile-card">
+      <div class="profile-info">
+        <div class="img-container"><img src="images/image-jeremy.png" alt="" width="100%" height="100%"></div>
+        <div class="profile-texts">
+        <span class="info">Report for</span>
+        <h2 class="profile-name">Jeremy Robson</h2>
+       </div>
+      </div>
+      
+      <div class="activity-btn">
+        <button id="daily">Daily</button>
+        <button id="weekly">Weekly</button>
+        <button id="monthly">Monthly</button>
+      </div>
+    </section>
+
+    <!--activity time tracker-->
+<section class="activity-tracker">
+
+<div class="activity-cards work">
+  <div class="card-top work">
+    <div class="card-img"></div>
+  </div>
+  <div class="card-bottom">
+    <div class="time-frame">
+      <h2 class="activity-title"> Work</h2>
+      <img class="svg-icon" src="images/icon-ellipsis.svg" alt="">
+    </div>
+    
+    <span class="current-data">32hrs</span>
+    <div class="previous-activity">
+      <span class="previous-timeframe">Last week</span>-<span class="previous-data"></span>
+    </div>
+  </div>
+</div>
+
+<div class="activity-cards play">
+  <div class="card-top play">
+    
+  </div>
+  <div class="card-bottom">
+    <div class="time-frame">
+      <h2 class="activity-title"> Play</h2>
+      <img class="svg-icon" src="images/icon-ellipsis.svg" alt="">
+    </div>
+    
+    <span class="current-data">32hrs</span>
+    <div class="previous-activity">
+      <span class="previous-timeframe">Last week</span>-<span class="previous-data"></span>
+    </div>
+  </div>
+</div>
+
+<div class="activity-cards study">
+  <div class="card-top study"></div>
+  <div class="card-bottom">
+    <div class="time-frame">
+      <h2 class="activity-title"> Study</h2>
+      <img class="svg-icon" src="images/icon-ellipsis.svg" alt="">
+    </div>
+    
+    <span class="current-data">32hrs</span>
+    <div class="previous-activity">
+      <span class="previous-timeframe">Last week</span><span class="previous-data">-</span>
+    </div>
+  </div>
+</div>
+
+<div class="activity-cards exercise">
+  <div class="card-top exercise"></div>
+  <div class="card-bottom">
+    <div class="time-frame">
+      <h2 class="activity-title"> Exercise</h2>
+      <img class="svg-icon" src="images/icon-ellipsis.svg" alt="">
+    </div>
+    
+    <span class="current-data">32hrs</span>
+    <div class="previous-activity">
+      <span class="previous-timeframe">Last week</span>-<span class="previous-data"></span>
+    </div>
+  </div>
+</div>
+
+<div class="activity-cards social">
+  <div class="card-top social"></div>
+  <div class="card-bottom">
+    <div class="time-frame">
+      <h2 class="activity-title"> Social</h2>
+      <img class="svg-icon" src="images/icon-ellipsis.svg" alt="">
+    </div>
+    
+    <span class="current-data">32hrs</span>
+    <div class="previous-activity">
+      <span class="previous-timeframe">Last week</span>-<span class="previous-data"></span>
+    </div>
+  </div>
+</div>
+
+<div class="activity-cards self-care">
+  <div class="card-top self"></div>
+  <div class="card-bottom">
+    <div class="time-frame">
+      <h2 class="activity-title"> Self Care</h2>
+      <div class="svgs"><img class="svg-icon" src="images/icon-ellipsis.svg" alt=""></div>
+    </div>
+    
+    <span class="current-data">32hrs</span>
+    <div class="previous-activity">
+      <span class="previous-timeframe">Last week</span>-<span class="previous-data"></span>
+    </div>
+  </div>
+</div>
+
+</section>
+
+  </main>
+ <script src="script.js"></script>
+</body>
+</html>

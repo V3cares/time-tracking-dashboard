@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    /* activity cards color */
+    --work-color: hsl(15, 100%, 70%);
+    --exercise-color: hsl(145, 58%, 55%);
+    --self-care: hsl(43, 84%, 65%);
+    --play-color: hsl(195, 74%, 62%);
+    --study-color: hsl(348, 100%, 68%);
+    --social-color: hsl(264, 64%, 52%);
+
+    /* background and text colors */
+    --primary-color: hsl(226, 43%, 10%);
+    --secondary-color: hsl(235, 46%, 20%);
+    --tertiary-color: hsl(246, 80%, 60%);
+    --text-color-primary: hsl(236, 100%, 87%);
+    --text-color-secondary: hsl(235, 45%, 61%);
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    max-width: 100%;
+    font-family: "Rubik",Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color);
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dashboard{
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    
+}
+
+.profile-card{
+    grid-row: 1 / span 2;
+    height: 100%;
+  width: 270px;
+  letter-spacing: 1px;
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+}
+
+.info{
+    display: inline-block;
+    color: var(--text-color-primary);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.profile-name{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 0 0 3rem 0;
+    font-weight: 400;
+}
+
+.img-container{
+    width:100px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+img{
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.profile-info{
+    background-color: var(--tertiary-color);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.activity-btn{
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 1rem;
+}
+
+button{
+    background:none;
+    border: none;
+    color: var(--text-color-primary);
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.activity-tracker{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-row: 1 / span 2;
+    gap: 1rem;
+}
+
+.activity-cards{
+    width: 250px;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.card-top{
+    width: 100%;
+    height: 2rem;
+    background-color: blue;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0 0;
+    
+}
+
+.active{
+    color: #fff;
+}
+
+.card-bottom{
+    width: 100%;
+    background-color:var(--secondary-color);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+}
+
+.time-frame{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;  
+ margin-bottom: 1rem; 
+}
+
+.svg-icon{
+   border-radius: 0;
+   background: none; 
+   border: none;
+}
+
+.activity-title{
+    font-size:1.4rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.current-data{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.previous-timeframe{
+    color: var(--text-color-primary);
+    font-weight: 400;
+}
+
+.previous-data{
+    color: var(--text-color-primary);
+    font-size: 1.2rem;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.work{
+    background: var(--work-color);
+     background-image: url(images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: -10px;
+}
+
+.play{
+    background-color: var(--play-color);
+    background-image: url(images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: -10px;
+
+}
+
+.study{
+    background: var(--study-color);
+     background-image: url(images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: -10px;
+}
+
+.exercise{
+    background: var(--exercise-color);
+     background-image: url(images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: -2px;
+}
+
+.self{
+    background: var(--self-care);
+     background-image: url(images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: -10px;
+}
+
+.social{
+    background: var(--social-color);
+     background-image: url(images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: -10px;
+}
+
+button:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width:500px) {
+    body{
+        width: 100%;
+        padding: 1rem;
+        display: block;
+    }
+    .dashboard{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .profile-card{
+        grid-row: 1;
+        width: 100%;
+    }
+    .activity-tracker{
+        width: 100%;
+        grid-row: 2;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+    }
+     
+    .activity-cards{
+        width: 100%;
+    }
+    
+}
+
+
+
